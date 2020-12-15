@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Salary For You</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body>
+        
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+                <a class="navbar-brand brand-title brand-styling">$alary for you</a>
+                <div class="navbar-collapse collapse" id="navbar9">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" >Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link not-active" href="works.html">How it works</a>
+                        </li>   
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Landing section -->
+        <section class="landing-section">
+            <div class="container">
+                <div class="input-data">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="email@example.com">    
+                        </div>
+                        <div class="form-group">
+                            <label for="degree">Degree type</label>
+                            <select class="form-control" id="degree">
+                              <option>Bachelor's</option>
+                              <option>No degree</option>
+                              <option>Associate</option>
+                              <option>Doctorate</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                          </div>
+                    </form>
+                </div>
+                <div class="landing-info">
+                    <h1>Lorem ipsum dolor sit.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et urna quis sapien mollis consequat vitae eu odio. Sed ac dolor congue, dignissim quam ac, efficitur diam. </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Information section -->
+        <section class="data-section">
+            <div class="container">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Occupations</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">How rich are you?</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <h1>Tab 1</h1>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <h1>Tab 2</h1>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="page-footer font-small">
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="#"> Salary for you</a>
+            </div>
+        </footer>
+
+        <!-- Javascript -->
+        <script src="index.js"></script>
+    </body>
+</html>
