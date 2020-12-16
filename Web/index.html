@@ -51,11 +51,13 @@
                             </select>
                           </div>
                           <div class="form-group">
-                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                            <input type="range" min="25000" step="5000" max="500000" value="100000" class="slider" id="salaryRange">
                           </div>
-                          <div>
-                              <h2>$000,000</h2>
+                          <div id="flex-container">
+                              <h2>$</h2>
+                              <h2 id="salaryValue">100,000</h2>
                           </div>
+                          <button type="submit" class="btn" id="submit-btn">Calculate</button>
                     </form>
                 </div>
                 <div class="landing-info">
@@ -77,6 +79,7 @@
                     </li>
                   </ul>
                   <div class="tab-content" id="pills-tabContent">
+                    <!-- Occupation tab -->
                     <div class="tab-pane fade show active" id="pills-occupation" role="tabpanel" aria-labelledby="pills-occupation-tab">
                         <div id="flex-container">
                             <h1>1.</h1>
@@ -111,19 +114,85 @@
                             <h3 id="information-format-description">$180,000</h3>
                         </div>
                     </div>
+                    <!-- How rich are you? tab -->
                     <div class="tab-pane fade" id="pills-rich" role="tabpanel" aria-labelledby="pills-rich-tab">
-
+                        <div id="flex-container">
+                            <h1>1.</h1>
+                            <div id="one-occupation-description">
+                                <h1>Jeff Bezos</h1>
+                                <div id="information-format">
+                                    <h5>Title: </h5>
+                                    <h5 id="information-format-description">C.E.O @ Amazon</h5>
+                                </div>
+                                <div id="information-format">
+                                    <h5>Net worth: </h5>
+                                    <h5 id="information-format-description">$181.5 B</h5>
+                                </div>
+                                <div id="information-format">
+                                    <h5>Field of study in college: </h5>
+                                    <h5 id="information-format-description">Computer Science & Electrical Engineering</h5>
+                                </div>
+                                <div id="information-format">
+                                    <h5>How long to reach net worth: </h5>
+                                    <h5 id="information-format-description">864,286 years</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="flex-container" class="information-top-padding">
+                            <h1>2.</h1>
+                            <div id="one-occupation-description">
+                                <h1>Elon Musk</h1>
+                                <div id="information-format">
+                                    <h5>Title: </h5>
+                                    <h5 id="information-format-description">C.E.O @ Space X</h5>
+                                </div>
+                                <div id="information-format">
+                                    <h5>Net worth: </h5>
+                                    <h5 id="information-format-description">$135.8 B</h5>
+                                </div>
+                                <div id="information-format">
+                                    <h5>Field of study in college: </h5>
+                                    <h5 id="information-format-description">Business & Physics</h5>
+                                </div>
+                                <div id="information-format">
+                                    <h5>How long to reach net worth: </h5>
+                                    <h5 id="information-format-description">646,667 years</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="flex-container" class="information-top-padding">
+                            <h1>3.</h1>
+                            <div id="one-occupation-description">
+                                <h1>Mark Zuckerburg</h1>
+                                <div id="information-format">
+                                    <h5>Title: </h5>
+                                    <h5 id="information-format-description">C.E.O @ Facebook</h5>
+                                </div>
+                                <div id="information-format">
+                                    <h5>Net worth: </h5>
+                                    <h5 id="information-format-description">$102.1 B</h5>
+                                </div>
+                                <div id="information-format">
+                                    <h5>Field of study in college: </h5>
+                                    <h5 id="information-format-description">Computer Science & Psychology</h5>
+                                </div>
+                                <div id="information-format">
+                                    <h5>How long to reach net worth: </h5>
+                                    <h5 id="information-format-description">486,191 years</h5>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                   </div>
             </div>
         </section>
 
         <!-- Footer -->
-        <!-- <footer class="page-footer font-small">
+        <footer id="footer" class="page-footer font-small">
             <div class="footer-copyright text-center py-3">© 2020 Copyright:
             <a href="#"> Salary for you</a>
             </div>
-        </footer> -->
+        </footer>
 
         <!-- Javascript -->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
