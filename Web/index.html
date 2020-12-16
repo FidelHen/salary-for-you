@@ -7,10 +7,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- CSS -->
         <link rel="stylesheet" href="styles.css">
-        <!-- Jquery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     </head>
     <body>
         
@@ -52,6 +53,9 @@
                           <div class="form-group">
                             <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                           </div>
+                          <div>
+                              <h2>$000,000</h2>
+                          </div>
                     </form>
                 </div>
                 <div class="landing-info">
@@ -66,31 +70,65 @@
             <div class="container">
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                      <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Occupations</a>
+                      <a class="nav-link active" id="pills-occupation-tab" data-bs-toggle="pill" href="#pills-occupation" role="tab" aria-controls="pills-occupation" aria-selected="true">Occupation</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">How rich are you?</a>
+                      <a class="nav-link" id="pills-rich-tab" data-bs-toggle="pill" href="#pills-rich" role="tab" aria-controls="pills-rich" aria-selected="false">How rich are you?</a>
                     </li>
                   </ul>
                   <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                        <h1>Tab 1</h1>
+                    <div class="tab-pane fade show active" id="pills-occupation" role="tabpanel" aria-labelledby="pills-occupation-tab">
+                        <div id="flex-container">
+                            <h1>1.</h1>
+                            <div id="one-occupation-description">
+                                <h1>Anesthesiologist</h1>
+                                <div id="information-format">
+                                    <h5>Salary: </h5>
+                                    <h5 id="information-format-description">$208,000</h5>
+                                </div>
+                                <div id="information-format">
+                                    <h5>Degree type: </h5>
+                                    <h5 id="information-format-description">Doctorate degree</h5>
+                                </div>
+                                <div id="information-format">
+                                    <h5>Job openings in 2019: </h5>
+                                    <h5 id="information-format-description">+33,000</h5>
+                                </div>
+                                <div id="information-format">
+                                    <h5>Job openings in 2029: </h5>
+                                    <h5 id="information-format-description">+34,000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="flex-container" class="information-top-padding">
+                            <h3>2.</h3>
+                            <h3 class="lower-num-padding">Orthodontist:</h3>
+                            <h3 id="information-format-description">$200,000</h3>
+                        </div>
+                        <div id="flex-container" class="information-top-padding">
+                            <h3>3.</h3>
+                            <h3 class="lower-num-padding">C.E.O:</h3>
+                            <h3 id="information-format-description">$180,000</h3>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        <h1>Tab 2</h1>
+                    <div class="tab-pane fade" id="pills-rich" role="tabpanel" aria-labelledby="pills-rich-tab">
+
                     </div>
                   </div>
             </div>
         </section>
 
         <!-- Footer -->
-        <footer class="page-footer font-small">
+        <!-- <footer class="page-footer font-small">
             <div class="footer-copyright text-center py-3">© 2020 Copyright:
             <a href="#"> Salary for you</a>
             </div>
-        </footer>
+        </footer> -->
 
         <!-- Javascript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
         <script src="index.js"></script>
     </body>
 </html>

@@ -10,6 +10,10 @@
   Max-width: 1100px
 */  
 
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 
 /* Navigation bar */
 nav .container {
@@ -17,7 +21,7 @@ nav .container {
 }
 
 .navbar .brand-styling {
-    color: #00CF98;
+    color: #00CF98 !important;
     font-weight: 600;
 }
 
@@ -52,6 +56,10 @@ nav .container {
 .landing-section h1 {
     color: #00CF98;
     font-weight: 700;
+}
+
+.landing-section p {
+    font-family: 'Open Sans', sans-serif;
 }
 
 .landing-section .form-control:focus {
@@ -92,8 +100,66 @@ nav .container {
     cursor: pointer;
   }
 
+  .landing-section h2 {
+      color:  #00CF98;
+  }
+
   .data-section {
       background-color: black;
+      margin-top: 5em;
+  }
+
+  .data-section .container {
+      padding-top: 0.5em;
+      padding-bottom: 2em;
+  }
+
+  .data-section .nav-item .active {
+        border-radius: 0%;
+        border-bottom: 2px solid #00CF98;
+        color: white !important;
+  }
+
+  .data-section h1 {
+      color: white;
+      font-weight: 700;
+  }
+
+  #pills-occupation-tab {
+    background-color: transparent;
+    color: #D0D1D3;
+  }
+
+  #pills-rich-tab {
+      background-color: transparent;
+      color: #D0D1D3;
+  }
+
+  #flex-container {
+      display: flex;
+  }
+
+  #one-occupation-description {
+      padding-left: 1em;
+  }
+
+  #information-format {
+      color: white;
+      display: flex;
+  }
+  
+  #information-format-description {
+      padding-left: 0.5em;
+      color:  #00CF98;
+  }
+
+  .data-section .lower-num-padding {
+      padding-left: 0.25em;
+  }
+
+  .data-section .information-top-padding {
+      padding-top: 1em;
+      color: white;
   }
 
 /* How it works : works.html */
