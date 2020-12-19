@@ -1,4 +1,4 @@
-var data =  [
+var occupationData =  [
   {
     occupationTitle: "Anesthesiologists",
     occupationCode: "29-1211",
