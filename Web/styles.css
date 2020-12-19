@@ -136,6 +136,10 @@ nav .container {
       font-weight: 700;
   }
 
+  .data-section a:hover {
+    text-decoration-color: #faad14;
+  }
+
   #pills-occupation-tab {
     background-color: transparent;
     color: #D0D1D3;
@@ -163,6 +167,27 @@ nav .container {
       padding-left: 0.5em;
       color:  #00CF98;
   }
+
+  #information-format-description-negative {
+    padding-left: 0.5em;
+    color:  red;
+  }
+
+  #occupationChartContainer {
+      margin:auto;
+      max-width: 1100px;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      align-items: flex-end;
+  }
+
+  #richChartContainer {
+    margin:auto;
+    max-width: 1100px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    align-items: flex-end;
+}
 
   .data-section .lower-num-padding {
       padding-left: 0.25em;
@@ -222,8 +247,13 @@ nav .container {
 /* Footer */
 footer {
     margin-bottom: 0.25em;
+    background-color: black;
 }
 
 .page-footer a {
     color: #00CF98;
+}
+
+.page-footer div {
+    color: white;
 }
