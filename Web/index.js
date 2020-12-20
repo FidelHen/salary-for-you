@@ -1,6 +1,7 @@
 //Global variables
 var salaryLineChart;
 var richPieChart;
+var emailSaved = false;
 
 //Document is ready
 $(document).ready(function(){
@@ -30,11 +31,17 @@ $(document).ready(function(){
     //Tabs in index.html
     $("#pills-occupation-tab").click(function(){
         $('#pills-occupation-tab').tab('show');
+        $('#occupationChartContainer').show();
+        $('#richChartContainer').hide();       
     });
 
     $("#pills-rich-tab").click(function(){
         $('#pills-rich-tab').tab('show');
+        $('#occupationChartContainer').hide();
+        $('#richChartContainer').show();
     });
+
+    $('#richChartContainer').hide();   
 });
 
 //Functions
@@ -43,7 +50,19 @@ function submit() {
         $("#submit-btn").html("Calculating...");
         findOccupations();
         findRichest();
+        if(!emailSaved) {
+            uploadData();
+        }
     }
+}
+
+//Upload data
+function uploadData() {
+    var param = {email: $('#email').val(), desiredSalary: $('#salaryRange').val(),};
+    //Ajax post to firebase
+    $.post('https://salary-for-you-default-rtdb.firebaseio.com/inquiries.json',JSON.stringify(param),function () {
+        emailSaved = true;
+    });
 }
 
 //Find data
@@ -79,20 +98,21 @@ function findOccupations() {
             }
         }
     }
-
-    updateOccupation(occupationIndex, salaryLineChart);
+    
+    updateOccupation(occupationIndex);
+    updateOccupationChart(occupationIndex, salaryLineChart);
 }
 
 function findRichest() {
     $.get('https://forbes400.herokuapp.com/api/forbes400?limit=3', function(data){
         updateRichest(data);
         updateRichChart(data, richPieChart);
+        resetForm();
     });
 }
 
 //Update charts
 function updateOccupationChart(data, chart) {
-    console.log(data)
     var dataset = [];
     var colors = [
         "#00CF98",
@@ -102,15 +122,15 @@ function updateOccupationChart(data, chart) {
     ];
 
     for(var x = 0; x< data.length; x++) {
-        var set = [];
+        var numSet = []
 
-        for(var z = 0; z < 10; z++) {
-            set.push[parseFloat(occupationData[z]["annualWage2019"].replace(/,/g, '')) * (x+1)];
+        for(var z = 0; z <= 10; z++) {
+            numSet.push(parseFloat(occupationData[data[x]]["annualWage2019"].replace(/,/g, '')) * (z+1));
         }
 
         dataset.push({
-            data:set,
-            label: occupationData[x].split("*")[0],
+            data: numSet,
+            label: occupationData[data[x]]["occupationTitle"].split("*")[0],
             borderColor: colors[x],
             fill: false
         });
@@ -118,39 +138,21 @@ function updateOccupationChart(data, chart) {
 
     var mySet = [];
 
-    for(x = 0; z < 10; z++) {
+    for(x = 0; x <= 10; x++) {
         mySet.push(52000 * (x+1))
     }
 
     dataset.push({
-        data:mySet,
+        data: mySet,
         label: "Median household income",
         borderColor: colors[data.length],
         fill: false
     });
 
-    console.log(dataset)
-
     chart.data = {
         labels: [2020,2021,2022,2023,2024,2025,2026,2027,2028,2029, 2030],
         datasets: dataset
     }
-
-    // data: {
-    //     labels: [2020,2021,2022,2023,2024,2025,2026,2027,2028,2029, 2030],
-    //     datasets: [{ 
-    //         data: one,
-    //         label: "Anesthesiologist",
-    //         borderColor: "#00CF98",
-    //         fill: false
-    //     }, { 
-    //         data: two,
-    //         label: "Median household income",
-    //         borderColor: "#faad14",
-    //         fill: false
-    //         }, 
-    //     ]
-    // }
 
     chart.update();
 }
@@ -284,9 +286,6 @@ function updateRichest(data) {
 
 //Helper functions
 function resetForm() {
-    $("#email").val("");
-    $("#salaryRange").val(210000)
-    $("#salaryValue").html("210,000")
     $("#submit-btn").html("Calculate");
 }
 

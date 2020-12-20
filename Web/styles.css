@@ -8,252 +8,251 @@
 
   Dimensions:
   Max-width: 1100px
-*/  
+*/
 
 * {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
-    height: 100%;
+  height: 100%;
 }
-
 
 /* Navigation bar */
 nav .container {
-    max-width: 1100px;
+  max-width: 1100px;
 }
 
 .navbar .brand-styling {
-    color: #00CF98 !important;
-    font-weight: 600;
+  color: #00cf98 !important;
+  font-weight: 600;
 }
 
 .navbar .active {
-    color: #00CF98;
+  color: #00cf98;
 }
 
 .navbar .not-active {
-    color: #898D90;
+  color: #898d90;
 }
 
 /* Home : index.html */
 .landing-section button {
-   margin-top: 1em;
-   background-color: #00CF98;
-   width: 120px;
-   color: white;
+  margin-top: 1em;
+  background-color: #00cf98;
+  width: 120px;
+  color: white;
 }
 
 .landing-section .container {
-    margin-top: 5em;
-    max-width: 1100px;
-    display: flex;
-    flex-direction:row;
+  margin-top: 5em;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: row;
 }
 
 .landing-section .input-data {
-    width: 550px;
+  width: 550px;
 }
 
 .landing-section .form-group {
-   width: 350px;
+  width: 350px;
 }
 
 .landing-section .landing-info {
-    width: 550px;
+  width: 550px;
 }
 
 .landing-section h1 {
-    color: #00CF98;
-    font-weight: 700;
+  color: #00cf98;
+  font-weight: 700;
 }
 
 .landing-section p {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .landing-section .form-control:focus {
-    border-color: #00CF98;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(0, 207, 152, 0.25);
+  border-color: #00cf98;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0px 0px 8px rgba(0, 207, 152, 0.25);
 }
 
 .slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 6px;
-    background: #D0D1D3;
-    outline: none;
-    opacity: 0.7;
-    border-radius: 5%;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-  }
-  
-  .slider:hover {
-    opacity: 1;
-  }
-  
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: #00CF98;
-    cursor: pointer;
-  }
-  
-  .slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    background: #00CF98;
-    cursor: pointer;
-  }
-
-  .landing-section h2 {
-      color:  #00CF98;
-  }
-
-  .data-section {
-      background-color: black;
-      margin-top: 4em;
-  }
-
-  .data-section .container {
-      padding-top: 0.5em;
-      padding-bottom: 2em;
-  }
-
-  .data-section .nav-item .active {
-        border-radius: 0%;
-        border-bottom: 2px solid #00CF98;
-        color: white !important;
-  }
-
-  .data-section h1 {
-      color: white;
-      font-weight: 700;
-  }
-
-  .data-section a:hover {
-    text-decoration-color: #faad14;
-  }
-
-  #pills-occupation-tab {
-    background-color: transparent;
-    color: #D0D1D3;
-  }
-
-  #pills-rich-tab {
-      background-color: transparent;
-      color: #D0D1D3;
-  }
-
-  #flex-container {
-      display: flex;
-  }
-
-  #one-occupation-description {
-      padding-left: 1em;
-  }
-
-  #information-format {
-      color: white;
-      display: flex;
-  }
-  
-  #information-format-description {
-      padding-left: 0.5em;
-      color:  #00CF98;
-  }
-
-  #information-format-description-negative {
-    padding-left: 0.5em;
-    color:  red;
-  }
-
-  #occupationChartContainer {
-      margin:auto;
-      max-width: 1100px;
-      margin-top: 2em;
-      margin-bottom: 2em;
-      align-items: flex-end;
-  }
-
-  #richChartContainer {
-    margin:auto;
-    max-width: 1100px;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    align-items: flex-end;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #d0d1d3;
+  outline: none;
+  opacity: 0.7;
+  border-radius: 5%;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
 }
 
-  .data-section .lower-num-padding {
-      padding-left: 0.25em;
-  }
+.slider:hover {
+  opacity: 1;
+}
 
-  .data-section .information-top-padding {
-      padding-top: 1em;
-      color: white;
-  }
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #00cf98;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #00cf98;
+  cursor: pointer;
+}
+
+.landing-section h2 {
+  color: #00cf98;
+}
+
+.data-section {
+  background-color: black;
+  margin-top: 4em;
+}
+
+.data-section .container {
+  padding-top: 0.5em;
+  padding-bottom: 2em;
+}
+
+.data-section .nav-item .active {
+  border-radius: 0%;
+  border-bottom: 2px solid #00cf98;
+  color: white !important;
+}
+
+.data-section h1 {
+  color: white;
+  font-weight: 700;
+}
+
+.data-section a:hover {
+  text-decoration-color: #faad14;
+}
+
+#pills-occupation-tab {
+  background-color: transparent;
+  color: #d0d1d3;
+}
+
+#pills-rich-tab {
+  background-color: transparent;
+  color: #d0d1d3;
+}
+
+#flex-container {
+  display: flex;
+}
+
+#one-occupation-description {
+  padding-left: 1em;
+}
+
+#information-format {
+  color: white;
+  display: flex;
+}
+
+#information-format-description {
+  padding-left: 0.5em;
+  color: #00cf98;
+}
+
+#information-format-description-negative {
+  padding-left: 0.5em;
+  color: red;
+}
+
+#occupationChartContainer {
+  margin: auto;
+  max-width: 1100px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  align-items: flex-end;
+}
+
+#richChartContainer {
+  margin: auto;
+  max-width: 1100px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  align-items: flex-end;
+}
+
+.data-section .lower-num-padding {
+  padding-left: 0.25em;
+}
+
+.data-section .information-top-padding {
+  padding-top: 1em;
+  color: white;
+}
 
 /* How it works : works.html */
 .about-us-header .container {
-    max-width: 800px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 3em;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 3em;
 }
 
 .about-us-header h1 {
-    color: #00CF98;
-    font-weight: 700;
+  color: #00cf98;
+  font-weight: 700;
 }
 
 .about-us-description {
-    background-color: black;
-    margin-top: 3em;
+  background-color: black;
+  margin-top: 3em;
 }
 
 .about-us-description .container {
-    padding-top: 3em;
-    padding-bottom: 3em;
-    max-width: 1100px;
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  max-width: 1100px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #person-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#person-container img{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    object-fit: cover;
+#person-container img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-#person-container h5{
-    padding-top: 0.5em;
+#person-container h5 {
+  padding-top: 0.5em;
 }
-
 
 /* Footer */
 footer {
-    margin-bottom: 0.25em;
-    background-color: black;
+  padding-bottom: 0.25em;
+  background-color: black;
 }
 
 .page-footer a {
-    color: #00CF98;
+  color: #00cf98;
 }
 
 .page-footer div {
-    color: white;
+  color: white;
 }
