@@ -7,3 +7,7 @@ This is a web application that let's you compare your desired salary with other 
 * Matthew Keiller
 * Addison Causey
 * Daman Sehra
+
+## Instructions to run
+1. Clone git repo
+2. Open Web/index.html
