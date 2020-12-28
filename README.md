@@ -9,7 +9,7 @@ This is a web application that let's you compare your desired salary with other 
 * Implement datasets
 
 ## Instructions to run ##
-1. Clone git repo
-2. Open Web/index.html
+1. Clone repository
+2. Open `Web/index.html`
 
 
