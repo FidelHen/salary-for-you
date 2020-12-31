@@ -1,5 +1,5 @@
 ![Salary for you Landing](Media/landing.png)
-# $alary for you #
+# Salary for you #
 This is a web application that let's you compare your desired salary with other occupations. This was a project done for my software engineer class. I worked on a team that helped with the idea.
 
 ## Learned ##
